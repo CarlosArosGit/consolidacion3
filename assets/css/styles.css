@@ -1,0 +1,375 @@
+/* abstracs*/
+/* vendors*/
+/* base*/
+/* layout*/
+body {
+  background-color: #333;
+}
+
+.principal {
+  display: flex;
+  width: 100%;
+}
+
+.principal__izquierda {
+  background-color: #333;
+  width: 20%;
+  display: inline-block;
+}
+
+.principal__izquierda__buscador {
+  display: inline-block;
+  width: 100%;
+}
+
+.principal__izquierda__chat {
+  color: white;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: inline-block;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 1px;
+}
+
+.principal__izquierda__img {
+  display: inherit;
+  width: 40%;
+  text-align: center;
+}
+
+.principal__izquierda__img__contenido {
+  width: 50%;
+}
+
+.principal__izquierda__info {
+  display: inherit;
+  width: 58%;
+  font-weight: 200;
+}
+
+.principal__izquierda__info--sinLeer {
+  font-weight: 700;
+}
+
+.principal__izquierda__info--leer {
+  font-weight: 200;
+}
+
+.principal__derecha__msj__hora {
+  display: inherit;
+}
+
+.principal__izquierda__fecha {
+  font-size: 9px;
+  color: #F2F3F4;
+}
+
+.principal__derecha {
+  background-color: white;
+  width: 79.999%;
+  display: inline-block;
+  background-image: url("../img/fnd.jpg");
+}
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  box-sizing: border-box;
+  color: #126992;
+  padding: 15px 15px 15px 35px;
+  width: 100%;
+}
+
+.input.password {
+  padding: 15px 35px 15px 15px;
+}
+
+.input-icon {
+  color: #126992;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.principal__derecha__uno {
+  display: inline-block;
+  background-color: #333;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 1px;
+}
+
+.principal__derecha__uno__img {
+  display: inherit;
+}
+
+.principal__derecha__uno__info {
+  display: inherit;
+  font-size: 25px;
+  color: white;
+}
+
+.principal__derecha__uno__img__contenido {
+  width: 55%;
+  margin-left: 6px;
+}
+
+.principal__derecha__uno__estado {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.principal__derecha__msj {
+  display: inline-block;
+  width: 100%;
+}
+
+.principal__derecha__msj__img {
+  display: inherit;
+  margin-top: 10px;
+  width: 10%;
+}
+
+.principal__derecha__msj__info {
+  display: inherit;
+  background-color: #ddd;
+  width: 6%;
+  height: 39px;
+  border: solid;
+  border-radius: 10.5px;
+  font-size: 20px;
+}
+
+.principal__derecha__msj__info__msj {
+  color: black;
+  margin-left: 10px;
+}
+
+.principal__derecha__msj__img__contenido {
+  width: 50%;
+  margin-left: 12px;
+  margin-top: 10px;
+}
+
+.principal__derecha__msj__propio {
+  margin-left: 92%;
+}
+
+.principal__derecha__msj__info__tres {
+  display: inherit;
+  background-color: #ddd;
+  width: 12%;
+  height: 39px;
+  border: solid;
+  border-radius: 10.5px;
+  font-size: 20px;
+}
+
+.principal__derecha__msj__propio__tres {
+  margin-left: 71%;
+}
+
+.principal__btnchats {
+  width: 100%;
+  background-color: white;
+  font-weight: 700;
+}
+
+.visibleChats {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  padding: 15px 0px;
+  transition: opacity 2s linear;
+}
+
+.principal__input {
+  margin-bottom: 60px;
+  width: 100%;
+  background-color: #333;
+}
+
+.principal__input__general {
+  width: 74%;
+  float: right;
+}
+
+.principal__derecha__msj__hora {
+  width: 80%;
+}
+
+.principal__derecha__msj__hora__3 {
+  width: 77%;
+  display: inherit;
+}
+
+.principal__derecha__msj__info--propio {
+  background-color: #D0EECD;
+}
+
+.principal__derecha__msj__info--chat2 {
+  width: 30%;
+}
+
+.principal__derecha__msj__hora--chat2 {
+  width: 58%;
+}
+
+.principal__derecha__msj__info--propioChat2 {
+  width: 30%;
+  background-color: #D0EECD;
+}
+
+.principal__derecha__msj__hora--chat2p {
+  width: 59%;
+}
+
+.principal__derecha__msj__propio--chat2p {
+  margin-left: 90%;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.pie {
+  background-color: #333;
+  width: 100%;
+  height: 50px;
+}
+
+.pie__parrafo {
+  color: white;
+}
+
+/* components*/
+/* pages*/
+/* themes*/
+@media only screen and (max-width: 600px) {
+  .principal__derecha__msj__hora__3 {
+    width: 30%;
+  }
+  .principal__izquierda__info {
+    display: none;
+  }
+  .principal__izquierda__buscador {
+    display: none;
+  }
+  .principal__izquierda__img {
+    width: 100%;
+  }
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .principal__derecha__msj__propio {
+    margin-left: 50%;
+  }
+  .principal__derecha__msj__info__tres {
+    width: 44%;
+  }
+  .principal__btnchats {
+    display: block;
+  }
+  .principal__izquierda__chats {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    padding: 0;
+  }
+  #btnChatsOcultar {
+    display: none;
+  }
+  .principal__derecha__msj__hora {
+    width: 66%;
+  }
+}
+@media only screen and (max-width: 1390px) {
+  .principal__derecha__msj__info {
+    width: 21%;
+  }
+  .principal__derecha__msj__propio {
+    margin-left: 65%;
+  }
+  .principal__derecha__msj__info__tres {
+    width: 44%;
+  }
+  .principal__derecha__msj__propio__tres {
+    margin-left: 32%;
+  }
+  .principal__derecha__msj__hora {
+    width: 66%;
+  }
+  .principal__derecha__msj__hora--chat2 {
+    width: 12%;
+  }
+  .principal__derecha__msj__info--chat2 {
+    width: 66%;
+    height: 75px;
+  }
+  .principal__derecha__msj__hora--chat2p {
+    width: 12%;
+  }
+  .principal__derecha__msj__info--propioChat2 {
+    width: 66%;
+    height: 75px;
+  }
+  .principal__derecha__msj__propio--chat2p {
+    margin-left: 2%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .principal__btnchats {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

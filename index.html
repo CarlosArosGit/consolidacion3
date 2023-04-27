@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- JQUERY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <header class="cabecera">
+    <div class="topnav" id="myTopnav">
+      <a href="#home">Inicio</a>
+      <a href="#news">Preguntas Frecuentes</a>
+      <a href="#contact">Manuales y Tutoriales</a>
+      <a href="#about">Noticias</a>
+      <a href="#about">Administración de perfil de usuario</a>
+      <a href="#about">Organigrama de la empresa</a>
+      <a href="#about" class="active">Chat para vendedores y equipo de soporte</a>
+      <a href="javascript:void(0);" class="icon" id="nav_movil">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+  <main class="principal">
+    <aside class="principal__izquierda">
+      <button class="principal__btnchats" id="btnChats">Mostrar Chats</button>
+      <button class="principal__btnchats" id="btnChatsOcultar">Ocultar Chats</button>
+      <div class="principal__izquierda__chats" id="principal__izquierda__chats">
+        <article class="principal__izquierda__buscador">
+          <aside class="principal__izquierda__buscador__input">
+            <div class="input-wrapper">
+              <input type="search" class="input" placeholder="Buscar">
+              <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+          </aside>
+        </article>
+        <article class="principal__izquierda__chat" id="id__chat__tamara">
+          <figure class="principal__izquierda__img">
+            <img class="principal__izquierda__img__contenido" src="assets/img/dancer.png" alt="">
+          </figure>
+          <aside class="principal__izquierda__info">
+            <p>Tamara <span class="principal__izquierda__fecha">24/04/2023</span></p>
+          </aside>
+        </article>
+        <article class="principal__izquierda__chat" id="id__chat__juan">
+          <figure class="principal__izquierda__img">
+            <img class="principal__izquierda__img__contenido" src="assets/img/man.png" alt="">
+          </figure>
+          <aside class="principal__izquierda__info principal__izquierda__info--sinLeer" id="juan">
+            <p>Juan <span class="principal__izquierda__fecha">22/04/2023</span></p>
+          </aside>
+        </article>
+        <article class="principal__izquierda__chat" id="id__chat__matias">
+          <figure class="principal__izquierda__img">
+            <img class="principal__izquierda__img__contenido" src="assets/img/manD.png" alt="">
+          </figure>
+          <aside class="principal__izquierda__info">
+            <p>Matias <span class="principal__izquierda__fecha">20/04/2023</span></p>
+          </aside>
+        </article>
+        <article class="principal__izquierda__chat" id="id__chat__carlos">
+          <figure class="principal__izquierda__img">
+            <img class="principal__izquierda__img__contenido" src="assets/img/manT.png" alt="">
+          </figure>
+          <aside class="principal__izquierda__info">
+            <p>Carlos <span class="principal__izquierda__fecha">19/04/2023</span></p>
+          </aside>
+        </article>
+        <article class="principal__izquierda__chat" id="id__chat__profe">
+          <figure class="principal__izquierda__img">
+            <img class="principal__izquierda__img__contenido" src="assets/img/tango.png" alt="">
+          </figure>
+          <aside class="principal__izquierda__info">
+            <p>Profe Baile <span class="principal__izquierda__fecha">18/04/2023</span></p>
+          </aside>
+        </article>
+        <article class="principal__izquierda__chat" id="id__chat__camila">
+          <figure class="principal__izquierda__img">
+            <img class="principal__izquierda__img__contenido" src="assets/img/woman.png" alt="">
+          </figure>
+          <aside class="principal__izquierda__info principal__izquierda__info--sinLeer" id="camila">
+            <p>Camila <span class="principal__izquierda__fecha">14/04/2023</span></p>
+          </aside>
+        </article>
+      </div>
+
+    </aside>
+    <aside class="principal__derecha">
+      <!-- 1er Chat -->
+      <div class="msj_1" id="id__msj_1">
+        <!-- Cabecera Chat -->
+        <article class="principal__derecha__uno">
+          <figure class="principal__derecha__uno__img">
+            <img class="principal__derecha__uno__img__contenido" src="assets/img/dancer.png" alt="">
+          </figure>
+          <aside class="principal__derecha__uno__info">
+            <p>Tamara <span class="principal__derecha__uno__estado">En linea</span></p>
+          </aside>
+        </article>
+        <!-- 1er MSJ -->
+        <article class="principal__derecha__msj">
+          <figure class="principal__derecha__msj__img">
+            <img class="principal__derecha__msj__img__contenido" src="assets/img/dancer.png" alt="">
+          </figure>
+          <aside class="principal__derecha__msj__info">
+            <p class="principal__derecha__msj__info__msj">Hola</p>
+          </aside>
+          <section class="principal__derecha__msj__hora">
+            <p>18:30 <i class="fa fa-check"></i><i class="fa fa-check"></i></p>
+          </section>
+
+        </article>
+        <!-- 2do MSJ -->
+        <article class="principal__derecha__msj">
+          <section class="principal__derecha__msj__hora">
+            <p><i class="fa fa-check principal__derecha__msj__propio"></i><i class="fa fa-check"></i></i>18:32</p>
+          </section>
+          <aside class="principal__derecha__msj__info principal__derecha__msj__info--propio">
+            <p class="principal__derecha__msj__info__msj">Hola</p>
+          </aside>
+          <figure class="principal__derecha__msj__img">
+            <img class="principal__derecha__msj__img__contenido" src="assets/img/argentinian.png" alt="">
+          </figure>
+        </article>
+        <!-- 3er MSJ -->
+        <article class="principal__derecha__msj">
+          <figure class="principal__derecha__msj__img">
+            <img class="principal__derecha__msj__img__contenido" src="assets/img/dancer.png" alt="">
+          </figure>
+          <aside class="principal__derecha__msj__info__tres ">
+            <p class="principal__derecha__msj__info__msj">¿Como estas?</p>
+          </aside>
+          <section class="principal__derecha__msj__hora__3">
+            <p>18:35 <i class="fa fa-check"></i><i class="fa fa-check"></i></p>
+          </section>
+        </article>
+        <!-- 4to MSJ -->
+        <article class="principal__derecha__msj">
+          <section class="principal__derecha__msj__hora">
+            <p><i class="fa fa-check principal__derecha__msj__propio"></i><i class="fa fa-check"></i></i>18:40</p>
+          </section>
+          <aside class="principal__derecha__msj__info principal__derecha__msj__info--propio">
+            <p class="principal__derecha__msj__info__msj">Bien</p>
+          </aside>
+          <figure class="principal__derecha__msj__img">
+            <img class="principal__derecha__msj__img__contenido" src="assets/img/argentinian.png" alt="">
+          </figure>
+        </article>
+        <!-- 5to MSJ -->
+        <article class="principal__derecha__msj">
+          <section class="principal__derecha__msj__hora">
+            <p><i class="fa fa-check principal__derecha__msj__propio"></i><i class="fa fa-check"></i></i>18:40</p>
+          </section>
+          <aside class="principal__derecha__msj__info principal__derecha__msj__info--propio">
+            <p class="principal__derecha__msj__info__msj">¿y tú?</p>
+          </aside>
+          <figure class="principal__derecha__msj__img">
+            <img class="principal__derecha__msj__img__contenido" src="assets/img/argentinian.png" alt="">
+          </figure>
+        </article>
+      </div>
+
+      <!-- 2do Chat -->
+      <div class="msj_2" id="id__msj_2">
+        <!-- Cabecera Chat -->
+        <article class="principal__derecha__uno">
+          <figure class="principal__derecha__uno__img">
+            <img class="principal__derecha__uno__img__contenido" src="assets/img/man.png" alt="">
+          </figure>
+          <aside class="principal__derecha__uno__info">
+            <p>Juan <span class="principal__derecha__uno__estado">ultima conexión 15:58</span></p>
+          </aside>
+        </article>
+        <!-- 1er MSJ -->
+        <article class="principal__derecha__msj">
+          <figure class="principal__derecha__msj__img">
+            <img class="principal__derecha__msj__img__contenido" src="assets/img/man.png" alt="">
+          </figure>
+          <aside class="principal__derecha__msj__info principal__derecha__msj__info--chat2">
+            <p class="principal__derecha__msj__info__msj">Lorem Ipsum es simplemente el texto </p>
+          </aside>
+          <section class="principal__derecha__msj__hora principal__derecha__msj__hora--chat2">
+            <p>14:30 <i class="fa fa-check"></i><i class="fa fa-check"></i></p>
+          </section>
+        </article>
+        <!-- 2do MSJ -->
+        <article class="principal__derecha__msj">
+          <section class="principal__derecha__msj__hora principal__derecha__msj__hora--chat2p">
+            <p><i class="fa fa-check principal__derecha__msj__propio principal__derecha__msj__propio--chat2p"></i><i
+                class="fa fa-check"></i></i>14:34</p>
+          </section>
+          <aside class="principal__derecha__msj__info principal__derecha__msj__info--propioChat2">
+            <p class="principal__derecha__msj__info__msj">Lorem Ipsum es simplemente el texto</p>
+          </aside>
+          <figure class="principal__derecha__msj__img">
+            <img class="principal__derecha__msj__img__contenido" src="assets/img/argentinian.png" alt="">
+          </figure>
+        </article>
+        <!-- 3er MSJ -->
+        <article class="principal__derecha__msj">
+          <figure class="principal__derecha__msj__img">
+            <img class="principal__derecha__msj__img__contenido" src="assets/img/man.png" alt="">
+          </figure>
+          <aside class="principal__derecha__msj__info principal__derecha__msj__info--chat2">
+            <p class="principal__derecha__msj__info__msj">Lorem Ipsum es simplemente el texto </p>
+          </aside>
+          <section class="principal__derecha__msj__hora principal__derecha__msj__hora--chat2">
+            <p>14:35 <i class="fa fa-check"></i><i class="fa fa-check"></i></p>
+          </section>
+        </article>
+        <!-- 4to MSJ -->
+        <article class="principal__derecha__msj">
+          <section class="principal__derecha__msj__hora principal__derecha__msj__hora--chat2p">
+            <p><i class="fa fa-check principal__derecha__msj__propio principal__derecha__msj__propio--chat2p"></i><i
+                class="fa fa-check"></i></i>14:37</p>
+          </section>
+          <aside class="principal__derecha__msj__info principal__derecha__msj__info--propioChat2">
+            <p class="principal__derecha__msj__info__msj">Lorem Ipsum es simplemente el texto</p>
+          </aside>
+          <figure class="principal__derecha__msj__img">
+            <img class="principal__derecha__msj__img__contenido" src="assets/img/argentinian.png" alt="">
+          </figure>
+        </article>
+        <!-- 5to MSJ -->
+        <article class="principal__derecha__msj">
+          <figure class="principal__derecha__msj__img">
+            <img class="principal__derecha__msj__img__contenido" src="assets/img/man.png" alt="">
+          </figure>
+          <aside class="principal__derecha__msj__info principal__derecha__msj__info--chat2">
+            <p class="principal__derecha__msj__info__msj">Lorem Ipsum es simplemente el texto </p>
+          </aside>
+          <section class="principal__derecha__msj__hora principal__derecha__msj__hora--chat2">
+            <p>14:40 <i class="fa fa-check"></i><i class="fa fa-check"></i></p>
+          </section>
+        </article>
+      </div>
+
+      <!-- 3er Chat -->
+      <div class="msj_3" id="id__msj_3">
+        <!-- Cabecera Chat -->
+        <article class="principal__derecha__uno">
+          <figure class="principal__derecha__uno__img">
+            <img class="principal__derecha__uno__img__contenido" src="assets/img/manD.png" alt="">
+          </figure>
+          <aside class="principal__derecha__uno__info">
+            <p>Matias <span class="principal__derecha__uno__estado">ultima conexión 19:21</span></p>
+          </aside>
+        </article>
+        <!-- 1er MSJ -->
+        <article class="principal__derecha__msj">
+          <figure class="principal__derecha__msj__img">
+            <img class="principal__derecha__msj__img__contenido" src="assets/img/manD.png" alt="">
+          </figure>
+          <aside class="principal__derecha__msj__info principal__derecha__msj__info--chat2">
+            <p class="principal__derecha__msj__info__msj">Lorem Ipsum es simplemente el texto </p>
+          </aside>
+          <section class="principal__derecha__msj__hora principal__derecha__msj__hora--chat2">
+            <p>08:00 <i class="fa fa-check"></i><i class="fa fa-check"></i></p>
+          </section>
+        </article>
+        <!-- 2do MSJ -->
+        <article class="principal__derecha__msj">
+          <section class="principal__derecha__msj__hora principal__derecha__msj__hora--chat2p">
+            <p><i class="fa fa-check principal__derecha__msj__propio principal__derecha__msj__propio--chat2p"></i><i
+                class="fa fa-check"></i></i>08:07</p>
+          </section>
+          <aside class="principal__derecha__msj__info principal__derecha__msj__info--propioChat2">
+            <p class="principal__derecha__msj__info__msj">Lorem Ipsum es simplemente el texto</p>
+          </aside>
+          <figure class="principal__derecha__msj__img">
+            <img class="principal__derecha__msj__img__contenido" src="assets/img/argentinian.png" alt="">
+          </figure>
+        </article>
+        <!-- 3er MSJ -->
+        <article class="principal__derecha__msj">
+          <figure class="principal__derecha__msj__img">
+            <img class="principal__derecha__msj__img__contenido" src="assets/img/manD.png" alt="">
+          </figure>
+          <aside class="principal__derecha__msj__info principal__derecha__msj__info--chat2">
+            <p class="principal__derecha__msj__info__msj">Lorem Ipsum es simplemente el texto </p>
+          </aside>
+          <section class="principal__derecha__msj__hora principal__derecha__msj__hora--chat2">
+            <p>08:35 <i class="fa fa-check"></i><i class="fa fa-check"></i></p>
+          </section>
+        </article>
+        <!-- 4to MSJ -->
+        <article class="principal__derecha__msj">
+          <section class="principal__derecha__msj__hora principal__derecha__msj__hora--chat2p">
+            <p><i class="fa fa-check principal__derecha__msj__propio principal__derecha__msj__propio--chat2p"></i><i
+                class="fa fa-check"></i></i>10:59</p>
+          </section>
+          <aside class="principal__derecha__msj__info principal__derecha__msj__info--propioChat2">
+            <p class="principal__derecha__msj__info__msj">Lorem Ipsum es simplemente el texto</p>
+          </aside>
+          <figure class="principal__derecha__msj__img">
+            <img class="principal__derecha__msj__img__contenido" src="assets/img/argentinian.png" alt="">
+          </figure>
+        </article>
+        <!-- 5to MSJ -->
+        <article class="principal__derecha__msj">
+          <figure class="principal__derecha__msj__img">
+            <img class="principal__derecha__msj__img__contenido" src="assets/img/manD.png" alt="">
+          </figure>
+          <aside class="principal__derecha__msj__info principal__derecha__msj__info--chat2">
+            <p class="principal__derecha__msj__info__msj">Lorem Ipsum es simplemente el texto </p>
+          </aside>
+          <section class="principal__derecha__msj__hora principal__derecha__msj__hora--chat2">
+            <p>16:40 <i class="fa fa-check"></i><i class="fa fa-check"></i></p>
+          </section>
+        </article>
+      </div>
+
+      <!-- 4to Chat -->
+      <div class="msj_4" id="id__msj_4">
+        <!-- Cabecera Chat -->
+        <article class="principal__derecha__uno">
+          <figure class="principal__derecha__uno__img">
+            <img class="principal__derecha__uno__img__contenido" src="assets/img/manT.png" alt="">
+          </figure>
+          <aside class="principal__derecha__uno__info">
+            <p>Carlos <span class="principal__derecha__uno__estado">ultima conexión 09:31</span></p>
+          </aside>
+        </article>
+        <!-- 1er MSJ -->
+        <article class="principal__derecha__msj">
+          <figure class="principal__derecha__msj__img">
+            <img class="principal__derecha__msj__img__contenido" src="assets/img/manT.png" alt="">
+          </figure>
+          <aside class="principal__derecha__msj__info principal__derecha__msj__info--chat2">
+            <p class="principal__derecha__msj__info__msj">Lorem Ipsum es simplemente el texto </p>
+          </aside>
+          <section class="principal__derecha__msj__hora principal__derecha__msj__hora--chat2">
+            <p>10:15 <i class="fa fa-check"></i><i class="fa fa-check"></i></p>
+          </section>
+        </article>
+        <!-- 2do MSJ -->
+        <article class="principal__derecha__msj">
+          <section class="principal__derecha__msj__hora principal__derecha__msj__hora--chat2p">
+            <p><i class="fa fa-check principal__derecha__msj__propio principal__derecha__msj__propio--chat2p"></i><i
+                class="fa fa-check"></i></i>10:32</p>
+          </section>
+          <aside class="principal__derecha__msj__info principal__derecha__msj__info--propioChat2">
+            <p class="principal__derecha__msj__info__msj">Lorem Ipsum es simplemente el texto</p>
+          </aside>
+          <figure class="principal__derecha__msj__img">
+            <img class="principal__derecha__msj__img__contenido" src="assets/img/argentinian.png" alt="">
+          </figure>
+        </article>
+        <!-- 3er MSJ -->
+        <article class="principal__derecha__msj">
+          <figure class="principal__derecha__msj__img">
+            <img class="principal__derecha__msj__img__contenido" src="assets/img/manT.png" alt="">
+          </figure>
+          <aside class="principal__derecha__msj__info principal__derecha__msj__info--chat2">
+            <p class="principal__derecha__msj__info__msj">Lorem Ipsum es simplemente el texto </p>
+          </aside>
+          <section class="principal__derecha__msj__hora principal__derecha__msj__hora--chat2">
+            <p>10:52 <i class="fa fa-check"></i><i class="fa fa-check"></i></p>
+          </section>
+        </article>
+        <!-- 4to MSJ -->
+        <article class="principal__derecha__msj">
+          <section class="principal__derecha__msj__hora principal__derecha__msj__hora--chat2p">
+            <p><i class="fa fa-check principal__derecha__msj__propio principal__derecha__msj__propio--chat2p"></i><i
+                class="fa fa-check"></i></i>13:02</p>
+          </section>
+          <aside class="principal__derecha__msj__info principal__derecha__msj__info--propioChat2">
+            <p class="principal__derecha__msj__info__msj">Lorem Ipsum es simplemente el texto</p>
+          </aside>
+          <figure class="principal__derecha__msj__img">
+            <img class="principal__derecha__msj__img__contenido" src="assets/img/argentinian.png" alt="">
+          </figure>
+        </article>
+        <!-- 5to MSJ -->
+        <article class="principal__derecha__msj">
+          <figure class="principal__derecha__msj__img">
+            <img class="principal__derecha__msj__img__contenido" src="assets/img/manT.png" alt="">
+          </figure>
+          <aside class="principal__derecha__msj__info principal__derecha__msj__info--chat2">
+            <p class="principal__derecha__msj__info__msj">Lorem Ipsum es simplemente el texto </p>
+          </aside>
+          <section class="principal__derecha__msj__hora principal__derecha__msj__hora--chat2">
+            <p>17:40 <i class="fa fa-check"></i><i class="fa fa-check"></i></p>
+          </section>
+        </article>
+      </div>
+
+      <!-- 5to Chat -->
+      <div class="msj_5" id="id__msj_5">
+        <!-- Cabecera Chat -->
+        <article class="principal__derecha__uno">
+          <figure class="principal__derecha__uno__img">
+            <img class="principal__derecha__uno__img__contenido" src="assets/img/tango.png" alt="">
+          </figure>
+          <aside class="principal__derecha__uno__info">
+            <p>Profe Baile <span class="principal__derecha__uno__estado">ultima conexión 10:47</span></p>
+          </aside>
+        </article>
+        <!-- 1er MSJ -->
+        <article class="principal__derecha__msj">
+          <figure class="principal__derecha__msj__img">
+            <img class="principal__derecha__msj__img__contenido" src="assets/img/tango.png" alt="">
+          </figure>
+          <aside class="principal__derecha__msj__info principal__derecha__msj__info--chat2">
+            <p class="principal__derecha__msj__info__msj">Lorem Ipsum es simplemente el texto </p>
+          </aside>
+          <section class="principal__derecha__msj__hora principal__derecha__msj__hora--chat2">
+            <p>10:00 <i class="fa fa-check"></i><i class="fa fa-check"></i></p>
+          </section>
+        </article>
+        <!-- 2do MSJ -->
+        <article class="principal__derecha__msj">
+          <section class="principal__derecha__msj__hora principal__derecha__msj__hora--chat2p">
+            <p><i class="fa fa-check principal__derecha__msj__propio principal__derecha__msj__propio--chat2p"></i><i
+                class="fa fa-check"></i></i>10:01</p>
+          </section>
+          <aside class="principal__derecha__msj__info principal__derecha__msj__info--propioChat2">
+            <p class="principal__derecha__msj__info__msj">Lorem Ipsum es simplemente el texto</p>
+          </aside>
+          <figure class="principal__derecha__msj__img">
+            <img class="principal__derecha__msj__img__contenido" src="assets/img/argentinian.png" alt="">
+          </figure>
+        </article>
+        <!-- 3er MSJ -->
+        <article class="principal__derecha__msj">
+          <figure class="principal__derecha__msj__img">
+            <img class="principal__derecha__msj__img__contenido" src="assets/img/tango.png" alt="">
+          </figure>
+          <aside class="principal__derecha__msj__info principal__derecha__msj__info--chat2">
+            <p class="principal__derecha__msj__info__msj">Lorem Ipsum es simplemente el texto </p>
+          </aside>
+          <section class="principal__derecha__msj__hora principal__derecha__msj__hora--chat2">
+            <p>10:05 <i class="fa fa-check"></i><i class="fa fa-check"></i></p>
+          </section>
+        </article>
+        <!-- 4to MSJ -->
+        <article class="principal__derecha__msj">
+          <section class="principal__derecha__msj__hora principal__derecha__msj__hora--chat2p">
+            <p><i class="fa fa-check principal__derecha__msj__propio principal__derecha__msj__propio--chat2p"></i><i
+                class="fa fa-check"></i></i>10:07</p>
+          </section>
+          <aside class="principal__derecha__msj__info principal__derecha__msj__info--propioChat2">
+            <p class="principal__derecha__msj__info__msj">Lorem Ipsum es simplemente el texto</p>
+          </aside>
+          <figure class="principal__derecha__msj__img">
+            <img class="principal__derecha__msj__img__contenido" src="assets/img/argentinian.png" alt="">
+          </figure>
+        </article>
+        <!-- 5to MSJ -->
+        <article class="principal__derecha__msj">
+          <figure class="principal__derecha__msj__img">
+            <img class="principal__derecha__msj__img__contenido" src="assets/img/tango.png" alt="">
+          </figure>
+          <aside class="principal__derecha__msj__info principal__derecha__msj__info--chat2">
+            <p class="principal__derecha__msj__info__msj">Lorem Ipsum es simplemente el texto </p>
+          </aside>
+          <section class="principal__derecha__msj__hora principal__derecha__msj__hora--chat2">
+            <p>10:09 <i class="fa fa-check"></i><i class="fa fa-check"></i></p>
+          </section>
+        </article>
+      </div>
+
+      <!-- 6to Chat -->
+      <div class="msj_6" id="id__msj_6">
+        <!-- Cabecera Chat -->
+        <article class="principal__derecha__uno">
+          <figure class="principal__derecha__uno__img">
+            <img class="principal__derecha__uno__img__contenido" src="assets/img/woman.png" alt="">
+          </figure>
+          <aside class="principal__derecha__uno__info">
+            <p>Camila <span class="principal__derecha__uno__estado">En linea</span></p>
+          </aside>
+        </article>
+        <!-- 1er MSJ -->
+        <article class="principal__derecha__msj">
+          <figure class="principal__derecha__msj__img">
+            <img class="principal__derecha__msj__img__contenido" src="assets/img/woman.png" alt="">
+          </figure>
+          <aside class="principal__derecha__msj__info principal__derecha__msj__info--chat2">
+            <p class="principal__derecha__msj__info__msj">Lorem Ipsum es simplemente el texto </p>
+          </aside>
+          <section class="principal__derecha__msj__hora principal__derecha__msj__hora--chat2">
+            <p>00:30 <i class="fa fa-check"></i><i class="fa fa-check"></i></p>
+          </section>
+        </article>
+        <!-- 2do MSJ -->
+        <article class="principal__derecha__msj">
+          <section class="principal__derecha__msj__hora principal__derecha__msj__hora--chat2p">
+            <p><i class="fa fa-check principal__derecha__msj__propio principal__derecha__msj__propio--chat2p"></i><i
+                class="fa fa-check"></i></i>08:32</p>
+          </section>
+          <aside class="principal__derecha__msj__info principal__derecha__msj__info--propioChat2">
+            <p class="principal__derecha__msj__info__msj">Lorem Ipsum es simplemente el texto</p>
+          </aside>
+          <figure class="principal__derecha__msj__img">
+            <img class="principal__derecha__msj__img__contenido" src="assets/img/argentinian.png" alt="">
+          </figure>
+        </article>
+        <!-- 3er MSJ -->
+        <article class="principal__derecha__msj">
+          <figure class="principal__derecha__msj__img">
+            <img class="principal__derecha__msj__img__contenido" src="assets/img/woman.png" alt="">
+          </figure>
+          <aside class="principal__derecha__msj__info principal__derecha__msj__info--chat2">
+            <p class="principal__derecha__msj__info__msj">Lorem Ipsum es simplemente el texto </p>
+          </aside>
+          <section class="principal__derecha__msj__hora principal__derecha__msj__hora--chat2">
+            <p>10:35 <i class="fa fa-check"></i><i class="fa fa-check"></i></p>
+          </section>
+        </article>
+        <!-- 4to MSJ -->
+        <article class="principal__derecha__msj">
+          <section class="principal__derecha__msj__hora principal__derecha__msj__hora--chat2p">
+            <p><i class="fa fa-check principal__derecha__msj__propio principal__derecha__msj__propio--chat2p"></i><i
+                class="fa fa-check"></i></i>12:32</p>
+          </section>
+          <aside class="principal__derecha__msj__info principal__derecha__msj__info--propioChat2">
+            <p class="principal__derecha__msj__info__msj">Lorem Ipsum es simplemente el texto</p>
+          </aside>
+          <figure class="principal__derecha__msj__img">
+            <img class="principal__derecha__msj__img__contenido" src="assets/img/argentinian.png" alt="">
+          </figure>
+        </article>
+        <!-- 5to MSJ -->
+        <article class="principal__derecha__msj">
+          <figure class="principal__derecha__msj__img">
+            <img class="principal__derecha__msj__img__contenido" src="assets/img/woman.png" alt="">
+          </figure>
+          <aside class="principal__derecha__msj__info principal__derecha__msj__info--chat2">
+            <p class="principal__derecha__msj__info__msj">Lorem Ipsum es simplemente el texto </p>
+          </aside>
+          <section class="principal__derecha__msj__hora principal__derecha__msj__hora--chat2">
+            <p>14:42 <i class="fa fa-check"></i><i class="fa fa-check"></i></p>
+          </section>
+        </article>
+      </div>
+    </aside>
+  </main>
+  <!-- SECCION INPUT CHAT PENDIENTE SELECT CON BOTONES
+  <section class="principal__input" id="idInputGeneral">
+    <button><i class="fa fa-list" aria-hidden="true"></i></button>
+    <input type="text" class="principal__input__general">
+  </section>
+  -->
+  <footer class="pie">
+    <p class="pie__parrafo">Este es el pie</p>
+  </footer>
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>

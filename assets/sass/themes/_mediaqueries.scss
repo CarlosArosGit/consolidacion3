@@ -1,0 +1,102 @@
+@media only screen and (max-width: 600px) {
+    .principal__derecha__msj__hora__3 {
+        width: 30%;
+    }
+    .principal__izquierda__info {
+        display: none;
+    }
+
+    .principal__izquierda__buscador {
+        display: none;
+    }
+
+    .principal__izquierda__img {
+        width: 100%;
+    }
+
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .principal__derecha__msj__propio {
+        margin-left: 50%;
+    }
+    .principal__derecha__msj__info__tres {
+        width: 44%;
+    }
+    .principal__btnchats{
+        display: block;
+    }
+    .principal__izquierda__chats{
+        visibility: hidden; 
+        opacity: 0;
+        height: 0;
+        padding: 0;
+    }
+    #btnChatsOcultar{
+        display: none;
+    }
+    .principal__derecha__msj__hora {
+        width: 66%;
+    }
+}
+@media only screen and (max-width: 1390px) {
+    .principal__derecha__msj__info {
+        width: 21%;
+    }
+    .principal__derecha__msj__propio {
+        margin-left: 65%;
+    }
+    .principal__derecha__msj__info__tres {
+        width: 44%;
+    }
+    .principal__derecha__msj__propio__tres {
+        margin-left: 32%;
+    }
+    .principal__derecha__msj__hora {
+        width: 66%;
+    }
+    .principal__derecha__msj__hora--chat2{
+        width: 12%;
+    }
+    .principal__derecha__msj__info--chat2{
+        width: 66%;
+        height: 75px;
+    }
+    .principal__derecha__msj__hora--chat2p{
+        width: 12%;
+    }
+    .principal__derecha__msj__info--propioChat2{
+        width: 66%;
+        height: 75px;
+    }
+    .principal__derecha__msj__propio--chat2p{
+        margin-left: 2%;
+    }
+    
+}
+@media only screen and (min-width: 1000px) {
+    .principal__btnchats{
+        display: none;
+    }
+}
