@@ -25,6 +25,7 @@ $( document ).ready(function() {
     $("#id__msj_5").css("display", "none");
     $("#id__msj_6").css("display", "none");
     $("#idInputGeneral").css("display", "block");
+    $(".dropdown-content").css("display", "none");
   });
 
   $("#id__chat__juan").click(function(){
@@ -37,6 +38,7 @@ $( document ).ready(function() {
     $("#juan").removeClass("principal__izquierda__info--sinLeer");
     $("#juan").addClass("principal__izquierda__info--leer");
     $("#idInputGeneral").css("display", "block");
+    $(".dropdown-content").css("display", "none");
   });
   
   $("#id__chat__matias").click(function(){
@@ -47,6 +49,7 @@ $( document ).ready(function() {
     $("#id__msj_5").css("display", "none");
     $("#id__msj_6").css("display", "none");
     $("#idInputGeneral").css("display", "block");
+    $(".dropdown-content").css("display", "none");
   });
   $("#id__chat__carlos").click(function(){
     $("#id__msj_1").css("display", "none");
@@ -56,6 +59,7 @@ $( document ).ready(function() {
     $("#id__msj_5").css("display", "none");
     $("#id__msj_6").css("display", "none");
     $("#idInputGeneral").css("display", "block");
+    $(".dropdown-content").css("display", "none");
   });
 
   $("#id__chat__profe").click(function(){
@@ -66,6 +70,7 @@ $( document ).ready(function() {
     $("#id__msj_5").css("display", "block");
     $("#id__msj_6").css("display", "none");
     $("#idInputGeneral").css("display", "block");
+    $(".dropdown-content").css("display", "none");
   });
   
   $("#id__chat__camila").click(function(){
@@ -78,6 +83,7 @@ $( document ).ready(function() {
     $("#camila").removeClass("principal__izquierda__info--sinLeer");
     $("#camila").addClass("principal__izquierda__info--leer");
     $("#idInputGeneral").css("display", "block");
+    $(".dropdown-content").css("display", "none");
   });
 
   $("#btnChats").click(function(){
@@ -93,4 +99,34 @@ $( document ).ready(function() {
     $("#btnChatsOcultar").css("display", "none");
     $("#btnChats").css("display", "block");
   });
+
+  $("#btnAdjunto").click(function(){
+    $(".principal__input__dropdown").css("display", "block");
+    $(".dropdown-content").css("display", "grid");
+    var chat1 = $("#id__msj_1").css("display"); 
+    if(chat1 == 'none' && screen.width < 600){
+      $(".dropdown-content").css("bottom", "33%");
+    }
+  });
+
+  $("#btnAdjunto").dblclick(function(){
+    $(".principal__input__dropdown").css("display", "none");
+  });
+
+  $("#camara").click(function(){
+    $(".principal__input__dropdown").css("display", "none");
+  });
+
+  $("#fotos").click(function(){
+    $(".principal__input__dropdown").css("display", "none");
+  });
+
+  $("#documento").click(function(){
+    $(".principal__input__dropdown").css("display", "none");
+  });
+
+  $("#ubicacion").click(function(){
+    $(".principal__input__dropdown").css("display", "none");
+  });
 });
+
