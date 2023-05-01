@@ -1,12 +1,5 @@
 $( document ).ready(function() {
-  $("#id__msj_1").css("display", "none");
-  $("#id__msj_2").css("display", "none");
-  $("#id__msj_3").css("display", "none");
-  $("#id__msj_4").css("display", "none");
-  $("#id__msj_5").css("display", "none");
-  $("#id__msj_6").css("display", "none");
-
-  $("#idInputGeneral").css("display", "none");
+  cerrarTodo();
   
   $("#nav_movil").click(function(){
     var x = document.getElementById("myTopnav");
@@ -128,5 +121,19 @@ $( document ).ready(function() {
   $("#ubicacion").click(function(){
     $(".principal__input__dropdown").css("display", "none");
   });
+
+  $(".btnCerrar").click(function(){
+    cerrarTodo();
+  });
+
+  function cerrarTodo(){
+    $("#id__msj_1").css("display", "none");
+    $("#id__msj_2").css("display", "none");
+    $("#id__msj_3").css("display", "none");
+    $("#id__msj_4").css("display", "none");
+    $("#id__msj_5").css("display", "none");
+    $("#id__msj_6").css("display", "none");
+    $("#idInputGeneral").css("display", "none");
+  }
 });
 
